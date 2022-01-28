@@ -1,0 +1,153 @@
+@import 'mixins';
+
+.reserva {
+    width: 100%;
+    min-height: 500px;
+    background-color: #F2F6F4;
+
+}
+
+.wrapper {
+    max-width: 67rem;
+    margin: 0 auto;
+
+    @include flex( row, nowrap, center, center );
+}
+
+.reserva__col1 {
+    width: 50%;
+
+    @include flex( column, nowrap, center, flex-start );
+
+
+    h1 {
+        width: 100%;
+        color: #000;
+        font-weight: 700;
+        font-size: 2.125rem;
+        line-height: 3.125rem;
+        display: block;
+        padding: 0 1rem;
+        margin: 1.5rem 2rem;
+
+    }
+}
+
+.reserva__formBox {
+    margin: 0 0 2rem 2rem;
+    padding: 1.3rem 1.5rem 1.5rem 1.5rem;
+    width: 450px;
+    background-color: white;
+    box-shadow: -2px 6px 10px 0 rgb(0 0 0 / 8%);
+}
+
+.reserva__input-group {
+    margin-bottom: .3rem;
+
+    label {
+        margin-left: .5rem;
+        font-size: .625rem;
+    }
+
+    .reserva__icon {
+        width: 30px;
+
+        svg {
+            width: 20px;
+            height: 20px;
+            margin: 0 0.5rem;
+            color: #6f7685;
+        }
+    }
+
+    .reserva__input-box {
+        width: 390px;
+        height: 50px;
+        padding: 1.2rem 0.5rem;
+        background: #fff;
+        overflow: hidden;
+        box-shadow: none!important;
+        border: 1px solid #959ba7;
+        border-radius: 0.25rem;
+        display: block;
+
+        @include flex( row, nowrap, space-between, center );
+    }
+
+    input {
+        width: 270px;
+        border: none;
+        outline: none;
+        color: black;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    /* ----- INPUT PLACEHOLDER ITALIC ----- */
+
+    ::-webkit-input-placeholder {
+        font-style: italic;
+        font-weight: 300;
+        letter-spacing: 0.4px;
+        color: #9EA3AE;
+     }
+     :-moz-placeholder {
+        font-style: italic;  
+        font-weight: 300;
+        letter-spacing: 0.4px;
+        color: #9EA3AE;
+     }
+     ::-moz-placeholder {
+        font-style: italic;
+        font-weight: 300;
+        letter-spacing: 0.4px;
+        color: #9EA3AE;
+     }
+     :-ms-input-placeholder {  
+        font-style: italic;
+        font-weight: 300;
+        letter-spacing: 0.4px;
+        color: #9EA3AE;
+     }
+
+    /* ----- o ----- */
+
+    .reserva__icon-check {
+        width: 30px;
+
+        svg {
+            width: 14px;
+            height: 14px;
+            color: #6f7685;
+            background-color: #fff;
+            border-radius: 50%;
+            border: 1px solid #6f7685;
+            padding: 0.125rem;
+            opacity: 0;
+        }
+    }
+}
+
+button {
+    margin-top: 1.6rem;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    background-color: #579448;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.375;
+    width: 100%;
+
+    &:hover {
+        background-color: #447537;
+    }
+}
+
+.reserva__col2 {
+    width: 50%;
+}
+

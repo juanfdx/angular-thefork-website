@@ -1,0 +1,148 @@
+@import 'mixins';
+
+.tarjeta {
+    width: 100%;
+    height: 130px;
+  
+    background: linear-gradient(
+        153.43deg
+        , hsl(104, 28%, 74%) 0%, hsl(104, 27%, 92%) 100%);
+
+    @include flex( row, nowrap, center, center);
+
+    @media (max-width: 1250px) {
+        height: 160px;
+    }
+
+    @media (max-width: 1160px) {
+        height: 166px;
+    }
+
+    @media (max-width: 720px) {
+        height: 190px;
+    }
+
+    @media (max-width: 546px) {
+        height: 230px;
+        overflow: hidden;
+    }
+
+    @media (max-width: 460px) {
+        height: 250px;
+        
+    }
+
+}
+
+.wrapper {
+    max-width: 67rem;
+    margin: 0 auto;
+    // padding: 1rem;
+
+    @include flex( row, nowrap, center, center);
+}
+
+.tarjeta__barra-izq {
+    width: 12px;
+    height: 100%;
+    background-color: #579448;
+}
+.tarjeta__img {
+    width: 79px;
+    height: 90px;
+
+    @media (max-width: 1250px) {
+        height: 120px;
+    }
+
+    @media (max-width: 1160px) {
+        height: 125px;
+        margin-left: .5rem;
+    }
+
+    @media (max-width: 720px) {
+        height: 150px;
+    }
+
+    @media (max-width: 490px) {
+        display: none;
+    }
+}
+
+.tarjeta__box {
+    width: 91%;
+    @include flex( row, nowrap, space-between, center);
+
+}
+
+.tarjeta__text {
+    padding: 0 2rem 0 1rem;
+
+    h2 {
+        font-weight: 600;
+        color: #3C4048;
+
+        @media (max-width: 1160px) {
+            font-size: 0.812rem;
+        }
+
+        @media (max-width: 720px) {
+            font-size: 0.812rem;
+            margin-top: .5rem;
+        }
+    }
+
+    p {
+        color: #3C4048;
+
+        @media (max-width: 1160px) {
+            font-size: 0.812rem;
+        }
+    }
+}
+
+.tarjeta__button {
+    padding: .5rem 0;
+    min-width: 380px;
+    font-size: 0.812rem;
+    font-weight: 600;
+    color: white;
+    background-color: #579448;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #447537;
+    }
+
+    @include flex( row, nowrap, center, center);
+
+    svg {
+        width: 10%;
+        width: 20px;
+        height: 20px;
+        margin-left: 14px;
+    }
+
+    @media (max-width: 720px) {
+        margin-bottom: .5rem;
+    }
+
+}
+
+/* ----- QUERIES ----- */
+
+
+
+@media (max-width: 1160px) {
+
+    .tarjeta__box {
+        padding-top: 1rem 0;
+        @include flex( column, nowrap, center, flex-start);
+    }
+
+    .tarjeta__button-box {
+        padding: .5rem 0 0 1rem;
+    }
+
+}

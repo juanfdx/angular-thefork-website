@@ -1,0 +1,55 @@
+<footer class="footer">
+
+    <div class="footer__reserva">
+        <div class="wrapper-p">
+            <p class="footer__reserva-p">
+                Descubre y reserva el mejor restaurante
+            </p>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="footer__col1">
+            <div class="footer__apps">
+                <h2>Descargar aplicacion</h2>
+        
+                <div class="footer__imgBox">
+                    <div *ngFor="let image of imagesApp"  class="footer__imgEven50">
+                        <img [src]="image.src" [alt]="image.alt">
+                    </div>
+                </div>
+        
+            </div>
+        
+            <ul class="footer__ul">
+                <li *ngFor="let item of footerLinks; let i = index" class="footer__li">
+                    
+                    <a *ngIf="!item.urlExt" [routerLink]="item.url" class="footer__a">
+                        {{ item.name }}
+                    </a>
+        
+                    <a *ngIf="item.urlExt" [routerLink]="item.urlExt" class="footer__a">
+                        {{ item.name }}
+                    </a>
+        
+                </li>
+            </ul>
+        
+            <div class="footer__socialBox">
+                <div class="footer__media">
+                    <a href="http://instagram.com/thefork_es">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/thefork.es">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </div>
+                <p class="footer__pCopyRight">© <span class="footer__span">2022</span> LA FOURCHETTE SAS - TODOS LOS DERECHOS RESERVADOS</p>
+            </div>
+        </div>
+        <div class="footer__col2">
+            <p>Las ofertas promocionales están sujetas a las condiciones que figuran en la página del restaurante. Las ofertas en bebidas alcohólicas están dirigidas únicamente a adultos. El consumo excesivo de alcohol es perjudicial para la salud. Bebe con moderación.</p>
+        </div>
+    </div>
+
+</footer>
