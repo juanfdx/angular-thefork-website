@@ -13,6 +13,7 @@ import { ComoFuncionaComponent } from './como-funciona/como-funciona.component';
 import { AcercaTheForkComponent } from './acerca-the-fork/acerca-the-fork.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { FavoritosUsuariosComponent } from './favoritos-usuarios/favoritos-usuarios.component';
+import { TextoYBotonComponent } from './texto-y-boton/texto-y-boton.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { FavoritosUsuariosComponent } from './favoritos-usuarios/favoritos-usuar
     ComoFuncionaComponent,
     AcercaTheForkComponent,
     FavoritosUsuariosComponent,
+    TextoYBotonComponent,
   ],
   exports: [
     HeaderComponent,
@@ -40,6 +42,7 @@ import { FavoritosUsuariosComponent } from './favoritos-usuarios/favoritos-usuar
     ComoFuncionaComponent,
     AcercaTheForkComponent,
     FavoritosUsuariosComponent,
+    TextoYBotonComponent,
   ],
   imports: [
     CommonModule,

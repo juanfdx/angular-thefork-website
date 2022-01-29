@@ -1,0 +1,42 @@
+
+.about {
+    width: 100%;
+    background-color: white;
+    min-height: 280px;
+    padding: 2rem 0 .5rem;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 67rem;
+    margin: 0 auto; 
+    padding: 0 1rem;
+
+    h2 {
+        width: 100%;
+        font-size: 1.125rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        color: #3C4048;
+    }
+
+    .about__p1 {
+        margin-bottom: 1.5rem;
+        font-size: .875rem;
+    }
+
+    .about__p2 {
+        margin: 1.5rem 0;
+        font-size: .875rem;
+        // para hacer un tap
+        // overflow: hidden;
+        // height: 0px;
+        // height: 80px;
+    }
+
+    a {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,145 @@
+@import 'mixins';
+
+.propietario {
+    width: 100%;
+    min-height: 500px;
+    padding: 1rem 0 2.5rem;
+    background-color: white;
+    
+    @media (max-width: 625px) {
+        min-height: 800px;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 67rem;
+    margin: 0 auto; 
+    padding: 0 1rem;
+
+    @include flex( column, nowrap, flex-start, center );
+
+    .propietario__h2 {
+        width: 100%;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1.25rem;
+        color: #3C4048;
+    }
+
+    @media (max-width: 625px) {
+        min-height: 800px;
+    }
+}
+
+.propietario__registro-box {
+    width: 100%;
+    max-height: 395px;
+    margin: 0 1rem;
+    border: 1px solid #DDDDDD;
+    border-radius: 0.25rem; 
+
+    @include flex( row, nowrap, center, center );
+
+    
+    @media (max-width: 930px) {
+        max-height: 450px;
+    }
+
+    @media (max-width: 730px) {
+        max-height: 520px;
+    }
+
+    @media (max-width: 625px) {
+        @include flex( column, nowrap, flex-start, center );
+        width: 100%;
+        // min-height: 720px;
+        max-height: 800px;
+        overflow: hidden;
+    }
+}
+
+.propietario__img {
+    width: 50%;
+    
+    @media (max-width: 625px) {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        max-height: 395px;
+        min-height: 395px;
+        border-top-left-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem;
+
+        @media (max-width: 930px) {
+            max-height: 450px;
+            min-height: 450px;
+        }
+
+        @media (max-width: 730px) {
+            max-height: 520px;
+            min-height: 520px;
+        }
+
+        @media (max-width: 625px) {
+            width: 100%;
+            max-height: 450px;
+            min-height: auto;
+            border-bottom-left-radius: 0;
+            border-top-right-radius: 0.25rem;
+        }
+    }
+}
+
+.propietario__registrar {
+    width: 50%;
+    min-height: 395px;
+    padding: 0 1.5rem 1.5rem;
+
+    @media (max-width: 930px) {
+        min-height: 450px;
+    }
+
+    @media (max-width: 730px) {
+        min-height: 520px;
+    }
+
+    @media (max-width: 625px) {
+        width: 100%;
+        min-height: 395px;
+    }
+}
+
+.texto__boton {
+    width: 100%;
+    margin-top: 01.5rem;
+
+    @include flex( column, nowrap, center, flex-start );
+
+    .texto__h2 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #3C4048;
+    }
+
+    .texto__p {
+        margin-bottom: 1rem;
+        color: #3C4048;
+        // line-height: 1.375;
+    }
+
+    .texto__a {
+        padding: 0.35rem 0.75rem;
+        font-size: 0.8125rem;
+        font-weight: 600;
+        color: #579448;
+        border: 1px solid #579448;
+        border-radius: 0.125rem;
+
+        &:hover {
+            background-color: #DAE7D6;
+        }
+    }
+}
