@@ -12,6 +12,7 @@ import { EresPropietarioComponent } from './eres-propietario/eres-propietario.co
 import { ComoFuncionaComponent } from './como-funciona/como-funciona.component';
 import { AcercaTheForkComponent } from './acerca-the-fork/acerca-the-fork.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { FavoritosUsuariosComponent } from './favoritos-usuarios/favoritos-usuarios.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { AppRoutingModule } from '../app-routing.module';
     EresPropietarioComponent,
     ComoFuncionaComponent,
     AcercaTheForkComponent,
+    FavoritosUsuariosComponent,
   ],
   exports: [
     HeaderComponent,
@@ -37,6 +39,7 @@ import { AppRoutingModule } from '../app-routing.module';
     EresPropietarioComponent,
     ComoFuncionaComponent,
     AcercaTheForkComponent,
+    FavoritosUsuariosComponent,
   ],
   imports: [
     CommonModule,

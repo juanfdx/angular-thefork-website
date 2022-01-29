@@ -1,0 +1,35 @@
+@import 'mixins';
+
+.favoritos {
+    width: 100%;
+    padding: 2.5rem 0;
+    background-color: white;
+}
+
+.wrapper {
+    max-width: 67rem;
+    margin: 0 auto;
+
+    @include flex( row, nowrap, center, center );
+}
+
+.favoritos__button {
+    cursor: pointer;
+    padding: 0 1rem;
+
+    img {
+        border-radius: 0.25rem;   
+    }
+
+    .favoritos__img-xl {
+        @media (max-width: 930px) {
+            display: none;
+        }
+    }
+
+    .favoritos__img-md {
+        @media (min-width: 930px) {
+            display: none;
+        }
+    }
+}

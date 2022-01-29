@@ -19,7 +19,6 @@
 
     @include flex( column, nowrap, center, flex-start );
 
-
     h1 {
         width: 100%;
         color: #000;
@@ -30,6 +29,13 @@
         padding: 0 1rem;
         margin: 1.5rem 2rem;
 
+        @media (max-width: 1160px) {
+            margin: 1.5rem 0;   
+        }
+    }
+
+    @media (max-width: 1160px) {
+        width: 100%;    
     }
 }
 
@@ -39,6 +45,12 @@
     width: 450px;
     background-color: white;
     box-shadow: -2px 6px 10px 0 rgb(0 0 0 / 8%);
+
+    @media (max-width: 1160px) {
+        width: 100%; 
+        margin-left: 0; 
+        padding: 1.3rem 1rem 1.5rem 1rem;
+    }
 }
 
 .reserva__input-group {
@@ -58,6 +70,10 @@
             margin: 0 0.5rem;
             color: #6f7685;
         }
+
+        @media (max-width: 1160px) {
+            width: 50px;
+        }
     }
 
     .reserva__input-box {
@@ -72,6 +88,10 @@
         display: block;
 
         @include flex( row, nowrap, space-between, center );
+
+        @media (max-width: 1160px) {
+            width: 100%;
+        }
     }
 
     input {
@@ -81,6 +101,10 @@
         color: black;
         font-size: 1rem;
         font-weight: 600;
+
+        @media (max-width: 1160px) {
+            width: 100%;
+        }
     }
 
     /* ----- INPUT PLACEHOLDER ITALIC ----- */
@@ -90,31 +114,35 @@
         font-weight: 300;
         letter-spacing: 0.4px;
         color: #9EA3AE;
+        padding-left: .1rem;
      }
      :-moz-placeholder {
         font-style: italic;  
         font-weight: 300;
         letter-spacing: 0.4px;
         color: #9EA3AE;
+        padding-left: .1rem;
      }
      ::-moz-placeholder {
         font-style: italic;
         font-weight: 300;
         letter-spacing: 0.4px;
         color: #9EA3AE;
+        padding-left: .1rem;
      }
      :-ms-input-placeholder {  
         font-style: italic;
         font-weight: 300;
         letter-spacing: 0.4px;
         color: #9EA3AE;
+        padding-left: .1rem;
      }
 
     /* ----- o ----- */
 
     .reserva__icon-check {
         width: 30px;
-
+    
         svg {
             width: 14px;
             height: 14px;
@@ -123,7 +151,16 @@
             border-radius: 50%;
             border: 1px solid #6f7685;
             padding: 0.125rem;
-            opacity: 0;
+            opacity: 0; //opacity para validar form
+
+            @media (max-width: 1160px) {
+                float: right;
+            }
+        }
+
+        @media (max-width: 1160px) {
+            width: 50px;
+            padding-right: .5rem;
         }
     }
 }
@@ -149,5 +186,9 @@ button {
 
 .reserva__col2 {
     width: 50%;
+
+    @media (max-width: 1160px) {
+        display: none;
+    }
 }
 
