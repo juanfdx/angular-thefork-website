@@ -12,13 +12,21 @@ export interface Image {
 
 export interface Restaurante {
     insider?    : boolean,
-    imagen      : string,
+    imgRest     : string,
+    imgCity?     : string,
     tipo        : Array<string>,
     nombre      : string,
     nota        : number,
+    dobleYums?  : boolean,
     pay?        : boolean,
     direccion   : string,
+    ciudad      : string,
     precioMedio : number,
-    descuento?   : number,
+    descuento?  : number,
     yums?       : boolean
+}
+
+export interface Ciudad {
+    nombre : string,
+    imagen : string
 }

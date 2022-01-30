@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Ciudad } from 'src/app/interfaces/interfaces';
 
 @Component({
   selector: 'app-slider-ciudad',
@@ -7,9 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SliderCiudadComponent implements OnInit {
 
-  constructor() { }
+  @Input() tipo : string = ''
+  @Input() titulo : string = '' || 'Mas ciudades'
+  @Input() ciudades : Array<Ciudad> = []
+
+  left  : boolean = false
+  right : boolean = false
+
+  constructor(  ) { }
 
   ngOnInit(): void {
+  }
+
+  slideLeft(): void {
+    this.right = false
+    this.left = true
+  }
+
+  slideRight(): void {
+    this.left = false
+    this.right = true
   }
 
 }

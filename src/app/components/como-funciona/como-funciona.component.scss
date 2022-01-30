@@ -4,13 +4,15 @@
     width: 100%;
     min-height: 400px;
     background-color: white;
+    padding: 35px 0 50px;
+
 }
 
 .wrapper {
     width: 100%;
     max-width: 67rem;
     margin: 0 auto; 
-    padding: 0 1rem;
+    padding: 0 2rem;
 
     .como__h2 {
         width: 100%;
@@ -23,6 +25,10 @@
         @media (max-width: 1160px) {
             font-size: 1.125rem;
         }
+    }
+
+    @media (max-width: 930px) { 
+        padding: 0 1rem;
     }
 }
 

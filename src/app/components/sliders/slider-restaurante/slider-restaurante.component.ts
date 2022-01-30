@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Restaurante } from 'src/app/interfaces/interfaces';
-import { RestautanteService } from 'src/app/services/restautante.service';
 
 @Component({
   selector: 'app-slider-restaurante',
@@ -9,14 +8,14 @@ import { RestautanteService } from 'src/app/services/restautante.service';
 })
 export class SliderRestauranteComponent implements OnInit {
 
-  restaurantes : Array<Restaurante> = []
+  @Input() titulo : string = '' || 'Mas restaurantes'
+  @Input() restaurantes : Array<Restaurante> = []
+  
 
   left  : boolean = false
   right : boolean = false
 
-  constructor( private restauranteService : RestautanteService ) { 
-    this.restaurantes = restauranteService.restaurantes
-  }
+  constructor(  ) { }
 
   ngOnInit(): void {
   }

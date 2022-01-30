@@ -5,12 +5,53 @@
 <app-favoritos-usuarios></app-favoritos-usuarios>
 
 <!-- repetir 8 veces -->
-<app-slider-restaurante></app-slider-restaurante>
+<app-slider-restaurante [restaurantes]="restParaTi" 
+                        [titulo]="'Selecionados para ti'">
+</app-slider-restaurante>
+
+<app-slider-restaurante [restaurantes]="restMasYums" 
+                        [titulo]="'Dónde puedo ganar más Yums?'"
+                        >
+</app-slider-restaurante>
+
+<app-slider-restaurante [restaurantes]="restMadrid" 
+                        [titulo]="'Restaurantes populares en Madrid'"
+                        >
+</app-slider-restaurante>
+
+<app-slider-restaurante [restaurantes]="restBarcelona" 
+                        [titulo]="'Restaurantes populares en Barcelona'"
+                        >
+</app-slider-restaurante>
+
+<app-slider-restaurante [restaurantes]="restValencia" 
+                        [titulo]="'Restaurantes populares en Valencia'"
+                        >
+</app-slider-restaurante>
+
+<app-slider-restaurante [restaurantes]="restSevilla" 
+                        [titulo]="'Restaurantes populares en Sevilla'"
+                        >
+</app-slider-restaurante>
+
+<app-slider-restaurante [restaurantes]="restZaragoza" 
+                        [titulo]="'Restaurantes populares en Zaragoza'"
+                        >
+</app-slider-restaurante>
+
 
 <app-como-funciona></app-como-funciona>
 
 <!-- repetir 2 veces -->
-<app-slider-ciudad></app-slider-ciudad>
+<app-slider-ciudad [ciudades]="ciudadesEspana"
+                   [titulo]="'Otras ciudades en España'"
+                   [tipo]="'small'">
+</app-slider-ciudad>
+
+<app-slider-ciudad [ciudades]="ciudadesMundo"
+                   [titulo]="'TheFork por el mundo'"
+                   [tipo]="'large'">
+</app-slider-ciudad>
 
 <app-acerca-the-fork></app-acerca-the-fork>
 
