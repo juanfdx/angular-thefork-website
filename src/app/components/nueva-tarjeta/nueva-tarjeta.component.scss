@@ -64,6 +64,10 @@
         height: 150px;
     }
 
+    @media (max-width: 532px) {
+        height: 180px;
+    }
+
     @media (max-width: 490px) {
         display: none;
     }

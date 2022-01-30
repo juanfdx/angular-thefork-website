@@ -14,11 +14,15 @@
 
     h2 {
         width: 100%;
-        font-size: 1.125rem;
+        font-size: 1.375rem;
         font-weight: 600;
         margin-bottom: 1rem;
         padding-bottom: 0.5rem;
         color: #3C4048;
+
+        @media (max-width: 1160px) {
+            font-size: 1.125rem;
+        }
     }
 
     .about__p1 {

@@ -1,0 +1,147 @@
+@import 'mixins';
+
+.como__funciona {
+    width: 100%;
+    min-height: 400px;
+    background-color: white;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 67rem;
+    margin: 0 auto; 
+    padding: 0 1rem;
+
+    .como__h2 {
+        width: 100%;
+        font-size: 1.375rem;
+        font-weight: 600;
+        margin: 1rem 0 1.5rem 0;
+        padding-top: 2.5rem;
+        color: #3C4048;
+
+        @media (max-width: 1160px) {
+            font-size: 1.125rem;
+        }
+    }
+}
+
+.como__slider-mask {
+    padding: .3rem 0;
+    width: 100%;
+    height: 265px;
+    overflow: hidden;
+
+    @media (max-width: 930px) { 
+        
+        // overflow-x: scroll;
+    }
+}
+
+.como__slide {
+    width: 100%; //aqui se usa el calculado
+
+    @include flex( row, nowrap, space-between, flex-start );
+
+    @media (max-width: 930px) {
+        transition: all .5s ease;
+        width: 400%; //aqui se usa el calculado
+    }
+}
+
+.star__box {
+    @include flex( row, nowrap, center, center );
+
+    width: 8rem;
+    height: 67px;
+    fill: currentColor;
+    vertical-align: text-bottom;
+    margin-left: 0.125rem;
+    margin-right: 0.125rem;
+    font-size: 1.5rem;
+    color: hsl(104, 38%, 42%);
+}
+
+.como__card {
+    width: 300px;
+    padding: 0 .5rem;
+    overflow: hidden;
+
+    @include flex( column, nowrap, flex-start, flex-start );
+
+
+    .como__img-svg1 {
+        width: 67px;
+        height: 67px;
+        fill: currentColor;
+        color: hsl(104, 38%, 42%);
+    }
+
+    .como__img-svg2 {
+        // width: 100%;
+        height: 67px;
+    }
+
+    .como__h3 {
+        font-size: .875rem;
+        font-weight: 600;
+        margin: 1.5rem 0 1rem;
+    }
+
+    .como__p {
+        font-size: .75rem;
+        margin: 0;
+    }
+
+    @media (max-width: 1160px) {
+
+        @include flex( column, nowrap, flex-start, center );
+
+        .como__p {
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 930px) { 
+        
+        width: 100%;
+        
+        .como__p {
+            font-size: .875rem;
+        }
+    }
+}
+
+.como__list {
+    width: 100%;
+    
+    @include flex( row, nowrap, center, center );
+
+    li {
+        padding: 0.25rem;
+
+        button {
+            border-radius: 50%;
+            background-color: #bfc3ca;
+            width: 0.5rem;
+            height: 0.5rem;
+            cursor: pointer;
+            border: none;
+            padding: 0;
+        }
+    }
+
+    
+    @media (min-width: 930px) { 
+        
+        display: none;
+    }
+}
+
+.activo {
+    background-color: hsl(104, 38%, 42%) !important;
+}
+
+// .inactivo {
+//     background-color: #bfc3ca;
+// }

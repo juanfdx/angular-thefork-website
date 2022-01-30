@@ -1,1 +1,76 @@
-<p>como-funciona works!</p>
+<section class="como__funciona">
+    <div class="wrapper">
+
+        <h2 class="como__h2">¿Cómo funciona?</h2>
+
+        <div class="como__slider-mask">
+            
+            <div [ngStyle]="{'transform': translateXvalue()}"
+                 class="como__slide">
+
+                <div class="como__card">
+                    <div class="como__img-svg1">
+                        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="svg-mejor"><g fill-rule="evenodd"><path d="M12 1.5c5.799 0 10.5 4.701 10.5 10.5S17.799 22.5 12 22.5 1.5 17.799 1.5 12 6.201 1.5 12 1.5zm0 1.313a9.187 9.187 0 100 18.374 9.187 9.187 0 000-18.375z"></path><path d="M9.307 17.074c-.586.417-1.349-.172-1.115-.847l1.107-3.199-2.507-1.91c-.559-.426-.263-1.329.442-1.329h3.128l.938-3.02c.215-.692 1.185-.692 1.4 0l.938 3.02h3.128c.693 0 .997.878.46 1.315l-2.367 1.924.96 3.27c.197.671-.56 1.222-1.13.81l-2.693-1.947-2.69 1.913z"></path></g></svg>
+                    </div>
+                    <h3 class="como__h3">La mejor opción</h3>
+                    <p class="como__p">Una selección inigualable de restaurantes para todo lo que quieras</p>
+                </div>
+
+                <div class="como__card">
+                    <div class="como__img-svg2">
+                        <div class="star__box">
+                            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" aria-hidden="true" focusable="false" font-size="l" color="green.m" mx="xxs" class="opinion-svg"><path id="star1" fill-rule="evenodd" d="M6.858 22.164c-1.118.795-2.575-.328-2.128-1.618l2.113-6.106-4.785-3.647c-1.068-.814-.503-2.537.844-2.537h5.97l1.792-5.767c.41-1.319 2.262-1.319 2.672 0l1.792 5.767h5.97c1.324 0 1.903 1.677.879 2.51l-4.52 3.674 1.834 6.242c.376 1.282-1.07 2.334-2.158 1.547l-5.14-3.718-5.135 3.653z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" aria-hidden="true" focusable="false" font-size="l" color="green.m" mx="xxs" class="opinion-svg"><path id="star1" fill-rule="evenodd" d="M6.858 22.164c-1.118.795-2.575-.328-2.128-1.618l2.113-6.106-4.785-3.647c-1.068-.814-.503-2.537.844-2.537h5.97l1.792-5.767c.41-1.319 2.262-1.319 2.672 0l1.792 5.767h5.97c1.324 0 1.903 1.677.879 2.51l-4.52 3.674 1.834 6.242c.376 1.282-1.07 2.334-2.158 1.547l-5.14-3.718-5.135 3.653z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" aria-hidden="true" focusable="false" font-size="l" color="green.m" mx="xxs" class="opinion-svg"><path id="star1" fill-rule="evenodd" d="M6.858 22.164c-1.118.795-2.575-.328-2.128-1.618l2.113-6.106-4.785-3.647c-1.068-.814-.503-2.537.844-2.537h5.97l1.792-5.767c.41-1.319 2.262-1.319 2.672 0l1.792 5.767h5.97c1.324 0 1.903 1.677.879 2.51l-4.52 3.674 1.834 6.242c.376 1.282-1.07 2.334-2.158 1.547l-5.14-3.718-5.135 3.653z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" aria-hidden="true" focusable="false" font-size="l" color="green.m" mx="xxs" class="opinion-svg"><path fill-rule="evenodd" d="M6.858 22.164c-1.118.795-2.575-.328-2.128-1.618l2.113-6.106-4.785-3.647c-1.068-.814-.503-2.537.844-2.537h5.97l1.792-5.767c.41-1.319 2.262-1.319 2.672 0l1.792 5.767h5.97c1.324 0 1.903 1.677.879 2.51l-4.52 3.674 1.834 6.242c.376 1.282-1.07 2.334-2.158 1.547l-5.14-3.718-5.135 3.653z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" aria-hidden="true" focusable="false" font-size="l" color="green.m" mx="xxs" class="opinion-svg"><path fill-rule="evenodd" d="M12 2.908L9.903 9.656h-7s-.005.017.003.024l5.591 4.261-2.444 7.063c-.005.015-.003.017-.006.02L12 16.788l5.953 4.306c-.003-.003-.001-.004-.005-.019l-2.096-7.135 5.242-4.261c.008-.007.002-.024.004-.024h-7.001L12 2.908zM6.858 22.164c-1.118.795-2.575-.328-2.128-1.618l2.113-6.106-4.785-3.647c-1.068-.814-.503-2.537.844-2.537h5.97l1.792-5.767c.41-1.319 2.262-1.319 2.672 0l1.792 5.767h5.97c1.324 0 1.903 1.677.879 2.51l-4.52 3.674 1.834 6.242c.376 1.282-1.07 2.334-2.158 1.547l-5.14-3.718-5.135 3.653z"></path></svg>
+                        </div>
+                    </div>
+                    <h3 class="como__h3">Opiniones de los usuarios</h3>
+                    <p class="como__p">Recomendaciones y opiniones de una magnífica comunidad</p>
+                </div>
+
+                <div class="como__card">
+                    <div class="como__img-svg1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="reserva-svg"><g fill-rule="evenodd"><path d="M12 3c-4.963 0-9 4.037-9 9s4.037 9 9 9 9-4.037 9-9-4.037-9-9-9m0 19.5C6.21 22.5 1.5 17.79 1.5 12S6.21 1.5 12 1.5 22.5 6.21 22.5 12 17.79 22.5 12 22.5"></path><path d="M14.5 14a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm2.273-6.773a.75.75 0 010 1.06l-8.485 8.486a.75.75 0 01-1.061-1.06l8.485-8.486a.75.75 0 011.061 0zM9.5 7a1.5 1.5 0 110 3 1.5 1.5 0 010-3z"></path></g></svg>
+                    </div>
+                    <h3 class="como__h3">Ventajas exclusivas</h3>
+                    <p class="como__p">Ofertas en multitud de restaurantes y muchas otras ventajas con nuestro programa Yums.</p>
+                </div>
+
+                <div class="como__card">
+                    <div class="como__img-svg1">
+                        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="_2D0CL css-p3qwn0 ez1w57s0"><g fill-rule="evenodd"><path d="M17.25.75a.75.75 0 01.75.75V3h3.75a.75.75 0 01.75.75v18a.75.75 0 01-.75.75H2.25a.75.75 0 01-.75-.75v-18A.75.75 0 012.25 3H6V1.5a.75.75 0 011.5 0V3h9V1.5a.75.75 0 01.75-.75zM21 9H3v12h18V9zM6 4.5H3v3h18v-3h-3v.75a.75.75 0 01-1.5 0V4.5h-9v.75a.75.75 0 01-1.5 0V4.5z"></path><path d="M10.313 18.813a.753.753 0 01-.531-.22l-3.188-3.187a.752.752 0 010-1.062.752.752 0 011.062 0l2.657 2.658 6.031-6.033a.752.752 0 011.062 0 .752.752 0 010 1.062l-6.562 6.563a.753.753 0 01-.531.219"></path></g></svg>
+                    </div>
+                    <h3 class="como__h3">Sistema de reservas sencillo</h3>
+                    <p class="como__p">Reserva inmediata, gratuita y estés donde estés. Las 24 horas, los 7 días de la semana.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <ul class="como__list">
+            <li>
+                <button (click)="itemSelected(0)"
+                        [ngClass]="{ 'activo' : position === 0 }">
+                </button>
+            </li>
+            <li>
+                <button (click)="itemSelected(1)"
+                        [ngClass]="{ 'activo' : position === 1 }">
+                </button>
+            </li>
+            <li>
+                <button (click)="itemSelected(2)"
+                        [ngClass]="{ 'activo' : position === 2 }">
+                </button>
+            </li>
+            <li>
+                <button (click)="itemSelected(3)"
+                        [ngClass]="{ 'activo' : position === 3 }">
+                </button>
+            </li>
+        </ul>
+
+    </div>
+</section>
