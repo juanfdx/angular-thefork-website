@@ -20,12 +20,15 @@
             </div>
         </div>
 
-        <article  class="article .scroll1">
-    
-            <div class="article__slider" [ngClass]="{ 'left' : left, 'right' : right }">
-                <div *ngFor="let restaurante of restaurantes; let i = index" class="article__cardBox">
-                    <a class="article__card-link">
-                        <div  class="article__card">
+        <article  class="article ">
+            <!-- Slide -->
+            <div class="article__slider" [ngStyle]="{ 'transform': translateXvalue(), 'width': slideWidth() }">
+
+                <div *ngFor="let restaurante of restaurantes; let i = index" class="article__cardBox" [ngStyle]="{ 'width': articleWidth() }">
+                    <a class="article__card-link" >
+
+                        <!-- Card -->
+                        <div  class="article__card" >
 
                             <img [src]="restaurante.imgRest" 
                                  [alt]="restaurante.nombre" 
@@ -73,12 +76,15 @@
                                 <li class="article__descuento">-{{ restaurante.descuento }} %</li>
                                 <li *ngIf="restaurante.yums" class="article__yums" >Acepta Yums</li>
                             </ul>
-
-                                
+                            
                         </div>
+                        <!-- End of card -->
+
                     </a>
                 </div>
+
             </div>
+            <!-- End of slide -->
 
         </article>
 

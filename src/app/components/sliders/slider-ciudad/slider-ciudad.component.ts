@@ -12,7 +12,7 @@ export class SliderCiudadComponent implements OnInit {
   @Input() titulo : string = '' || 'Mas ciudades'
   @Input() ciudades : Array<Ciudad> = []
 
-  left  : boolean = false
+  left  : boolean = true
   right : boolean = false
 
   constructor(  ) { }

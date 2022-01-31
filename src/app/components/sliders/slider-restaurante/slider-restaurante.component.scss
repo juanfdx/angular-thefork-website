@@ -76,7 +76,7 @@
 .article {
     padding: 20px 0 20px 20px;
     width: 100%;
-    overflow-x: hidden;  
+    overflow: hidden;  
     
     @media (max-width: 1300px) {
         overflow-x: auto;  
@@ -106,20 +106,25 @@
 
 
 .article__slider {
-    width: 100%;
+    // width: 100%; //ahora es calculado
     display: flex;
     justify-content: flex-start;
     flex-wrap: nowrap;
     transition: all 0.6s ease;
+
 }
 
-.article__slider.left {
-    transform: translateX(0%);
-}
+/* ----- Desplazamiento fijo no calculado */
 
-.article__slider.right {
-    transform: translateX(-100%);
-}
+// .article__slider.left {
+//     transform: translateX(0%);
+// }
+
+// .article__slider.right {
+//     transform: translateX(-100%);
+// }
+
+/* ----- o ----- */
 
 .article__cardBox {
     padding: 0.25rem 0.5rem 1rem;
@@ -140,7 +145,8 @@
 .article__card {
     position: relative;
     padding: 0.5rem;
-    width: 295px;
+    // width: 295px;
+    width: 100%;
     border-radius: 4px;
     
     &:hover {
@@ -305,16 +311,4 @@
 }
 
 
-// @media (min-width: 980px){
-
-//     .section__buttonsBox {
-//         opacity: 1;
-//     }
-
-//     .article {
-//         overflow-x: hidden;
-//     }
-
-
-// }
 
