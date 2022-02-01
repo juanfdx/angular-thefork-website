@@ -1,0 +1,168 @@
+@import 'mixins';
+
+
+/* ----- CARD ----- */
+
+.article__card {
+    position: relative;
+    padding: 0.5rem;
+    // width: 295px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    
+    &:hover {
+        box-shadow: 0px 3px 6px rgb(223, 221, 221);
+    }
+}
+
+/* ----- RESTAURANTE ----- */
+
+.article__insider-tipo-box {
+    width: 100%;
+    @include flex( row, nowrap, flex-start, center);
+
+}
+
+// .article__svgInsider {
+//     position: absolute;
+//     top: -10px;
+//     right: 20px;
+// }
+
+// .article__image {
+//     width: 100%;
+//     height: 215px;
+//     border-radius: 4px;
+// }
+
+.article__ulTipo {
+    margin: 3px 15px 0;
+    display: flex;
+}
+
+.article__liTipo {
+    margin-right: 4px;
+    font-size: 0.625rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: rgb(60, 64, 72);
+
+    &::after {
+        content: ' •';
+        margin: 5px 0;
+        font-size: 0.8rem;
+    }
+
+    &:last-child::after {
+        content: '';
+    }
+}
+
+.article__titleBox {
+    margin: 4px 0 11px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.article__title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: hsl(0, 0%, 0%);
+}
+
+.article__nota {
+    padding-right: 0.27rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: hsl(0, 0%, 0%);
+}
+
+.article__insiderTag {
+    width: 60px;
+    height: 22px;
+    font-size: 0.6rem;
+    border-radius: 0.125rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(40, 67, 60);
+    font-weight: 500;
+
+    @include flex( row, nowrap, center, center);
+}
+
+.article__payTag-box {
+    @include flex( row, nowrap, flex-start, center);
+}
+
+.article__payTag {
+    width: 48px;
+    height: 22px;
+    padding: .2rem 0.29rem 0.1rem; 
+    border-radius: 0.125rem;
+    color: rgb(255, 255, 255);
+    background-color: hsl(248, 38%, 15%);
+    display: flex;
+    align-items: center;
+}
+
+.article__TextoPayTag {
+    padding-bottom: 0.5px;
+    font-size: 0.6rem;
+    font-weight: 500;
+}
+
+.article__dobleYumsTag {
+    width: 86px;
+    height: 22px;
+    font-size: 0.6rem;
+    border-radius: 0.125rem;
+    color: #3C4048;
+    background-color: #FFDE31;
+    font-weight: 600;
+    margin-right: .3rem;
+
+    @include flex( row, nowrap, center, center);
+}
+
+.article__direccion {
+    margin: 12px 0 8px;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    color: rgb(60, 64, 72);
+}
+
+.article__precio {
+    margin: 7px 0 20px;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    color: rgb(60, 64, 72);
+}
+
+.article__ulDescuentoBox {
+    margin: 10px 0;
+    
+    @include flex( row, nowrap, flex-start, center);
+}
+
+.article__descuento {
+    // width: 63px;
+    width: 100%;
+    height: 27px;
+    padding: 0 0.5rem 0.15rem 0.5rem;
+    font-size: 0.8125rem;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    // color: hsl(0, 0%, 100%);
+    // background: hsl(0, 0%, 0%);
+    line-height: 1.4;
+    color: #CE1722;
+    background-color: white;
+}
+
+.article__yums {
+    padding-top: 4px;
+    margin-left: 11px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: underline 2px #FFDE31;
+}

@@ -124,10 +124,6 @@
 .article__cardBox {
     padding: 0.25rem 0.488rem 1rem;
 
-    @media (max-width: 1260px) {
-        padding: 0.25rem 0 1rem;  
-    }
-
     @media (max-width: 1160px) {
         padding: 0.25rem 0.5rem 1rem;  
     }

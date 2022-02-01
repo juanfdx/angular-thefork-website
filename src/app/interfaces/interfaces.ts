@@ -11,9 +11,10 @@ export interface Image {
 }
 
 export interface Restaurante {
+    id          : string,
     insider?    : boolean,
     imgRest     : string,
-    imgCity?     : string,
+    imgCity?    : string,
     tipo        : Array<string>,
     nombre      : string,
     nota        : number,
@@ -29,4 +30,17 @@ export interface Restaurante {
 export interface Ciudad {
     nombre : string,
     imagen : string
+}
+
+export interface SliderRestaurante {
+    titulo       : string,
+    flechas      : boolean,
+    restaurantes : Array<Restaurante>
+}
+
+export interface SliderCiudad {
+    tipo     : string,
+    flechas  : boolean,
+    titulo   : string,
+    ciudades : Array<Ciudad>
 }

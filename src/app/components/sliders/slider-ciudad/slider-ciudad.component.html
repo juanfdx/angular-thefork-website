@@ -4,7 +4,7 @@
 
         <div class="section__header">
             <h2 class="section__h2">{{ titulo }}</h2>
-            <div class="section__buttonsBox">
+            <div *ngIf="flechas" class="section__buttonsBox">
     
                 <button (click)="slideLeft()" [disabled]="left" [ngClass]="{ 'disabled' : left }" class="section__btnSlider">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="section__btnSliderSvg">
@@ -25,14 +25,14 @@
             <div class="article__slider" [ngClass]="{ 'left' : left, 'right' : right }">
                 <div *ngFor="let ciudad of ciudades; let i = index" class="article__cardBox">
                     <a class="article__card-link">
-                        <div [ngClass]="{'small-width': tipo === 'small', 'large-width': tipo === 'large'}" 
+                        <div [ngClass]="{'small-width': tipo === 'local', 'large-width': tipo === 'mundial'}" 
                              class="article__card">
 
                             <img [src]="ciudad.imagen" 
                                  [alt]="ciudad.nombre" 
                                  class="article__image">
                   
-                            <p [ngClass]="{'small-name': tipo === 'small', 'large-name': tipo === 'large'}"
+                            <p [ngClass]="{'small-name': tipo === 'local', 'large-name': tipo === 'mundial'}"
                                class="article__ciudad">
                                {{ ciudad.nombre }}
                             </p>

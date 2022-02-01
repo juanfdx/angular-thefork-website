@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Restaurante } from '../interfaces/interfaces';
+import { Restaurante, SliderRestaurante } from '../interfaces/interfaces';
 
 @Injectable({
   providedIn: 'root'
@@ -9,6 +9,7 @@ export class RestautanteService {
 
   restaurantes : Array<Restaurante> = [
     {
+      id          : '1',
       insider     : true,
       imgRest     : './assets/images/rest/antigua.webp',
       imgCity     : '',
@@ -24,6 +25,7 @@ export class RestautanteService {
       yums        : true
     },
     {
+      id          : '2',
       insider     : false,
       imgRest     : './assets/images/rest/Tsukimi.webp',
       imgCity     : '',
@@ -39,6 +41,7 @@ export class RestautanteService {
       yums        : true
     },
     {
+      id          : '3',
       insider     : false,
       imgRest     : './assets/images/rest/kuche.webp',
       imgCity     : '',
@@ -54,6 +57,7 @@ export class RestautanteService {
       yums        : false
     },
     {
+      id          : '4',
       insider     : true,
       imgRest     : './assets/images/rest/kippu.webp',
       imgCity     : '',
@@ -69,6 +73,7 @@ export class RestautanteService {
       yums        : false
     },
     {
+      id          : '5',
       insider     : true,
       imgRest     : './assets/images/rest/antigua.webp',
       imgCity     : '',
@@ -84,6 +89,7 @@ export class RestautanteService {
       yums        : true
     },
     {
+      id          : '6',
       insider     : false,
       imgRest     : './assets/images/rest/Tsukimi.webp',
       imgCity     : '',
@@ -99,6 +105,7 @@ export class RestautanteService {
       yums        : false
     },
     {
+      id          : '7',
       insider     : false,
       imgRest     : './assets/images/rest/kuche.webp',
       imgCity     : '',
@@ -114,6 +121,7 @@ export class RestautanteService {
       yums        : false
     },
     {
+      id          : '8',
       insider     : true,
       imgRest     : './assets/images/rest/kippu.webp',
       imgCity     : '',
@@ -128,6 +136,49 @@ export class RestautanteService {
       descuento   : 30,
       yums        : true
     }
+  ]
+
+  slidersRestaurante : Array<SliderRestaurante> = [
+    {
+      titulo       : 'Selecciones de TheFork',
+      flechas      : true ,
+      restaurantes : this.restaurantes
+    },
+    {
+      titulo       : 'Selecciones para tí',
+      flechas      : true ,
+      restaurantes : this.restaurantes
+    },
+    {
+      titulo       : 'Dónde puedo ganar más Yums?',
+      flechas      : true ,
+      restaurantes : this.restaurantes
+    },
+    {
+      titulo       : 'Restaurantes populares en Madrid',
+      flechas      : true ,
+      restaurantes : this.restaurantes
+    },
+    {
+      titulo       : 'Restaurantes populares en Barcelona',
+      flechas      : true ,
+      restaurantes : this.restaurantes
+    },
+    {
+      titulo       : 'Restaurantes populares en Valencia',
+      flechas      : true ,
+      restaurantes : this.restaurantes
+    },
+    {
+      titulo       : 'Restaurantes populares en Sevilla',
+      flechas      : true ,
+      restaurantes : this.restaurantes
+    },
+    {
+      titulo       : 'Restaurantes populares en Zaragoza',
+      flechas      : true ,
+      restaurantes : this.restaurantes
+    },
   ]
 
 

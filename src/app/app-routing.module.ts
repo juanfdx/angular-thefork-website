@@ -11,7 +11,7 @@ import { TarjetaRegaloComponent } from './pages/tarjeta-regalo/tarjeta-regalo.co
 
 const routes: Routes = [
   { path: '', component: InicioComponent },
-  { path: 'restaurante', component: RestauranteComponent },
+  { path: 'restaurante/:id', component: RestauranteComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'yums', component: ProgramaYumsComponent },
   { path: 'condiciones-uso', component: CondicionesUsoComponent },

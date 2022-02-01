@@ -9,6 +9,7 @@ import { Ciudad } from 'src/app/interfaces/interfaces';
 export class SliderCiudadComponent implements OnInit {
 
   @Input() tipo : string = ''
+  @Input() flechas : boolean = false
   @Input() titulo : string = '' || 'Mas ciudades'
   @Input() ciudades : Array<Ciudad> = []
 

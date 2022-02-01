@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Ciudad } from '../interfaces/interfaces';
+import { Ciudad, SliderCiudad } from '../interfaces/interfaces';
 
 @Injectable({
   providedIn: 'root'
@@ -98,6 +98,21 @@ export class CiudadService {
         nombre : 'Lisboa',
         imagen : 'assets/images/cityxl/lisboa.webp'
       }
+  ]
+
+  slidersCiudad : Array<SliderCiudad> = [
+    {
+      tipo     : 'local',
+      flechas      : true ,
+      titulo   : 'Otras ciudades en España',
+      ciudades : this.ciudadesEspana
+    },
+    {
+      tipo     : 'mundial',
+      flechas      : true ,
+      titulo   : 'TheFork por el mundo',
+      ciudades : this.ciudadesMundo
+    },
   ]
 
   constructor() { }

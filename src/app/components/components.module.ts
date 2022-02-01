@@ -14,6 +14,8 @@ import { AcercaTheForkComponent } from './acerca-the-fork/acerca-the-fork.compon
 import { AppRoutingModule } from '../app-routing.module';
 import { FavoritosUsuariosComponent } from './favoritos-usuarios/favoritos-usuarios.component';
 import { TextoYBotonComponent } from './texto-y-boton/texto-y-boton.component';
+import { SliderCardComponent } from './slider-card/slider-card.component';
+import { RestaurantCardComponent } from './restaurant-card/restaurant-card.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { TextoYBotonComponent } from './texto-y-boton/texto-y-boton.component';
     AcercaTheForkComponent,
     FavoritosUsuariosComponent,
     TextoYBotonComponent,
+    SliderCardComponent,
+    RestaurantCardComponent,
   ],
   exports: [
     HeaderComponent,
@@ -43,6 +47,8 @@ import { TextoYBotonComponent } from './texto-y-boton/texto-y-boton.component';
     AcercaTheForkComponent,
     FavoritosUsuariosComponent,
     TextoYBotonComponent,
+    SliderCardComponent,
+    RestaurantCardComponent,
   ],
   imports: [
     CommonModule,
