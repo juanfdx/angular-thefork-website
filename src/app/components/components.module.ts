@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { PipesModule } from '../pipes/pipes.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -16,6 +18,8 @@ import { FavoritosUsuariosComponent } from './favoritos-usuarios/favoritos-usuar
 import { TextoYBotonComponent } from './texto-y-boton/texto-y-boton.component';
 import { SliderCardComponent } from './slider-card/slider-card.component';
 import { RestaurantCardComponent } from './restaurant-card/restaurant-card.component';
+import { RegisterFormComponent } from './register-form/register-form.component';
+
 
 @NgModule({
   declarations: [
@@ -33,6 +37,7 @@ import { RestaurantCardComponent } from './restaurant-card/restaurant-card.compo
     TextoYBotonComponent,
     SliderCardComponent,
     RestaurantCardComponent,
+    RegisterFormComponent,
   ],
   exports: [
     HeaderComponent,
@@ -49,10 +54,14 @@ import { RestaurantCardComponent } from './restaurant-card/restaurant-card.compo
     TextoYBotonComponent,
     SliderCardComponent,
     RestaurantCardComponent,
+    RegisterFormComponent,
   ],
   imports: [
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PipesModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class ComponentsModule { }

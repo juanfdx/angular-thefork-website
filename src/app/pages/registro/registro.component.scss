@@ -1,0 +1,70 @@
+@import 'mixins';
+
+/* ----- SECTION ----- */
+
+.section {
+    width: 100%;
+    padding: 2rem 0;
+    background-color: white;
+}
+
+.wrapper {
+    max-width: 58rem;
+    margin: 0 auto; 
+    padding: .6rem 1rem;
+   
+    @media (max-width: 1160px) {
+        padding: .6rem 4rem;
+    }  
+    
+    @media (max-width: 750px) {
+        padding: .6rem 1rem;
+    }
+}
+
+.col-box {
+    @include flex( row, nowrap, center, center);
+}
+
+.col1 {
+    width: 60%;
+
+    @media (max-width: 1160px) {
+        width: 100%;
+    }
+}
+
+.text {
+    padding-right: 2rem;
+    
+    @include flex( column, nowrap, center, flex-start);
+
+    
+    @media (max-width: 1160px) {
+        padding-right: 0;
+    }
+
+    &__h1 {
+        color: #1e2e42;
+        font-size: 2.5rem;
+        font-weight: 500;
+        line-height: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    &__p {
+        color: #1e2e42;
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 2rem;
+    }
+}
+
+.col2 {
+    width: 40%;
+
+    @media (max-width: 1160px) {
+        display: none;
+    }
+
+}

@@ -1,0 +1,109 @@
+
+<div class="form-container">
+    
+    <form  [formGroup]="profileForm" (ngSubmit)="enviarForm()" class="form">
+
+        <div class="form__top">
+            <div class="form__input-group">
+                <label for="">Nombre</label>
+                <span>
+                    <input class="form__name" 
+                           type="text" 
+                           maxlength="20"
+                           formControlName="firstName"
+                    >
+                </span>
+            </div>
+            <div class="form__input-group">
+                <label for="">Apellido</label>
+                <span>
+                    <input class="form__apellido" 
+                           type="text" 
+                           maxlength="30"
+                           formControlName="lastName"
+                    >
+                </span>
+            </div>
+        </div>
+
+        <div class="form__mid">
+
+            <div class="form__input-group">
+                <label for="">Email</label>
+                <span>
+                    <input class="form__email" 
+                           type="email" 
+                           maxlength="30"
+                           formControlName="email"
+                    >
+                </span>
+            </div>
+
+            <div class="form__two-box">
+                <div class="form__input-group-box">
+                    <label for="">Teléfono</label>
+                    <span>
+                        <input class="form__prefijo" 
+                               type="text" 
+                               maxlength="4"
+                               formControlName="code"    
+                        >
+                    </span>
+                </div>
+                <div class="form__input-group-telf">
+                    <label for=""></label>
+                    <span>
+                        <input class="form__telefono" 
+                               type="text" 
+                               maxlength="12"
+                               formControlName="phone"        
+                       >
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="form__bottom">
+            <div class="form__input-group-check">
+                <input id="check" 
+                       class="form__check" 
+                       type="checkbox" 
+                       formControlName="check"
+                >
+                <label class="form__check-p" for="check">No quiero recibir comunicaciones por email/SMS de ElTenedor.</label>
+            </div>
+        </div>
+
+        <div class="form__submit">
+            <button type="submit" 
+                    class="form__button"
+                    [disabled]="profileForm.invalid"
+                    [ngStyle]="{ 'cursor' : profileForm.invalid ? 'not-allowed' : 'pointer' }"
+                    >
+                REGÍSTRATE
+            </button>
+        </div>
+    </form>
+
+</div>
+<div class="form__staus" style="margin-top: 20px;">
+    <!-- Estado del Formaulario -->
+    <li>Form Status: {{ profileForm.status}}</li>
+    <li>Valid: {{ profileForm.valid }}</li>
+    <li>Invalid: {{ profileForm.invalid }}</li>
+    <li>Touched: {{ profileForm.touched }}</li>
+    <li>Dirty: {{ profileForm.dirty }}</li>
+    <li>Pristine: {{ profileForm.pristine }}</li>
+    <br>
+    <!-- validar por cada campo -->
+    <li>firstName valid?: {{ profileForm.controls['firstName'].valid}}</li>
+    <li>lastName valid?: {{ profileForm.controls['lastName'].valid}}</li>
+    <li>Email valid?: {{ profileForm.controls['email'].valid}}</li>
+    <li>Phone valid?: {{ profileForm.controls['phone'].valid}}</li>
+
+
+</div>
+
+
+

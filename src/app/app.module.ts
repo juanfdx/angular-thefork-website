@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComponentsModule } from './components/components.module';
 import { PagesModule } from './pages/pages.module';
+import { PipesModule } from './pipes/pipes.module';
+
 
 
 @NgModule({
@@ -16,7 +18,8 @@ import { PagesModule } from './pages/pages.module';
     BrowserModule,
     AppRoutingModule,
     PagesModule,
-    ComponentsModule
+    ComponentsModule,
+    // PipesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

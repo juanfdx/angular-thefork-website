@@ -43,7 +43,7 @@
     </ul>
 
     <ul class="article__ulDescuentoBox">
-        <li class="article__descuento">-{{ restaurante.descuento }} %</li>
+        <li class="article__descuento">{{ restaurante.descuento | descuento }}</li>
         <li *ngIf="restaurante.yums" class="article__yums" >Acepta Yums</li>
     </ul>
     

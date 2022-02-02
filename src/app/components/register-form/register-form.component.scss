@@ -1,0 +1,164 @@
+@import 'mixins';
+
+
+.form-container {
+    margin-top: 3rem;
+    width: 100%;
+    @include flex( row, nowrap, center, center);
+
+}
+
+.form {
+    padding: 60px;
+    width: 100%;
+    height: 390px;
+    background-color: #589442;
+
+    @include flex( column, nowrap, space-around, center);
+
+
+    @media (max-width: 1160px) {
+        width: 745px;
+        height: 440px;        
+    }
+
+    @media (max-width: 850px) {
+        height: auto; 
+    }
+
+    label {
+        color: white;
+        font-size: .875rem;
+    }
+
+    input {
+        width: 100%;
+        background-color: white;
+        height: 45px;
+        border: none;
+        outline: none;
+        border-radius: 2px;
+        font-weight: 500;
+
+  
+    }
+
+    span {
+        width: 100%;
+        height: 47px;
+        background-color: white;
+        padding: 0 .5rem;
+        border-radius: 2px;
+        @media (max-width: 850px) {
+            margin-bottom: 1rem; 
+        }
+    }
+
+    .form__check {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 12px;
+        height: 12px;
+        margin-right: 12px;
+        background-color: white;
+        z-index: 2;
+    } 
+}
+
+.form__top {
+    width: 100%;
+
+    @include flex( row, nowrap, space-between, center);
+
+    @media (max-width: 850px) {
+        @include flex( column, nowrap, center, center);
+    }
+}
+
+.form__mid {
+    width: 100%;
+    margin-top: 1rem;
+
+    @include flex( row, nowrap, space-between, center);
+
+    @media (max-width: 850px) {
+        @include flex( column, nowrap, center, center);
+        margin-top: 0;
+
+    }
+}
+
+.form__input-group {
+    width: 49%;
+
+    @include flex( column, nowrap, center, flex-start);   
+
+    @media (max-width: 850px) {
+        width: 100%;
+    }
+}
+
+.form__two-box {
+    width: 49%;
+
+    @include flex( row, nowrap, space-between, flex-end);   
+
+    @media (max-width: 850px) {
+        width: 100%;
+    }
+}
+
+.form__input-group-box {
+    width: 23%;
+
+    @include flex( column, nowrap, center, flex-start);  
+}
+
+.form__input-group-telf {
+    width: 73%;
+
+    @include flex( column, nowrap, center, flex-start);  
+}
+
+.form__bottom {
+    width: 100%;
+}
+
+.form__input-group-check {
+    position: relative;
+    width: 100%;
+    margin-top: 1.5rem;
+
+    @include flex( row, nowrap, flex-start, center);   
+}
+
+.form__check-p {
+    margin-left: 30px;
+}
+
+.form__submit {
+    width: 100%;
+}
+
+.form__button {
+    margin-top: .8rem;
+    font-size: 20px;
+    padding: 0.75rem 1.5rem;
+    color: white;
+    background-color: #447233;
+    border-radius: 2px;
+    cursor: pointer;
+    opacity: 0.65;
+
+    &:hover {
+    background-color: #315325;
+    }
+
+    @media (max-width: 850px) {
+        width: 100%;
+    }
+}
+
+
+

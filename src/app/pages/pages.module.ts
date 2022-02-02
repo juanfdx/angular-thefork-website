@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ComponentsModule } from '../components/components.module';
 
 import { InicioComponent } from './inicio/inicio.component';
 import { RestauranteComponent } from './restaurante/restaurante.component';
@@ -9,7 +10,8 @@ import { CondicionesUsoComponent } from './condiciones-uso/condiciones-uso.compo
 import { BlogComponent } from './blog/blog.component';
 import { PrivacidadComponent } from './privacidad/privacidad.component';
 import { TarjetaRegaloComponent } from './tarjeta-regalo/tarjeta-regalo.component';
-import { ComponentsModule } from '../components/components.module';
+import { RegistroComponent } from './registro/registro.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { ComponentsModule } from '../components/components.module';
     CondicionesUsoComponent,
     PrivacidadComponent,
     BlogComponent,
-    TarjetaRegaloComponent
+    TarjetaRegaloComponent,
+    RegistroComponent
   ],
   exports: [
     InicioComponent,
@@ -30,7 +33,8 @@ import { ComponentsModule } from '../components/components.module';
     CondicionesUsoComponent,
     PrivacidadComponent,
     BlogComponent,
-    TarjetaRegaloComponent
+    TarjetaRegaloComponent,
+    RegistroComponent
   ],
   imports: [
     CommonModule,

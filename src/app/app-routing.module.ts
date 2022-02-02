@@ -6,11 +6,13 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { PrivacidadComponent } from './pages/privacidad/privacidad.component';
 import { ProgramaYumsComponent } from './pages/programa-yums/programa-yums.component';
+import { RegistroComponent } from './pages/registro/registro.component';
 import { RestauranteComponent } from './pages/restaurante/restaurante.component';
 import { TarjetaRegaloComponent } from './pages/tarjeta-regalo/tarjeta-regalo.component';
 
 const routes: Routes = [
   { path: '', component: InicioComponent },
+  { path: 'registro', component: RegistroComponent },
   { path: 'restaurante/:id', component: RestauranteComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'yums', component: ProgramaYumsComponent },
